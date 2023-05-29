@@ -23,3 +23,16 @@
     </a>
   </div>
 </div>
+
+
+<style>
+  .low-brigthness-mobile {
+  filter: brightness(100%);
+  }
+
+  @media only screen and (max-width: 1279px) {
+    .low-brigthness-mobile {
+      filter: brightness(30%);
+    }
+  }
+</style>
