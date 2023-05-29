@@ -1,0 +1,95 @@
+<script lang="ts">
+  import { page } from "$app/stores";
+  import Icon from '@iconify/svelte';
+
+  let navOpen: boolean = false;
+  const setNavOpen = (state: boolean) => {
+    navOpen = state
+  }
+
+  export let show: boolean;
+</script>
+
+<div class="{show ? 'fixed' : 'hidden'} z-50 py-2 px-3 w-screen border-b border-gray-800 backdrop-blur-lg overflow-hidden text-white">
+  <div class="justify-between hidden 2lg:flex">
+    <div class="flex px-2 items-center w-fit cursor-pointer">
+      <picture class="shrink-0 w-10 h-10">
+        <source srcSet="/icon/logo.webp" type="image/webp" />
+        <source srcSet="/icon/logo.png" type="image/png" />
+        <img src="/icon/logo.png" alt="March 7th emoji" />
+      </picture>
+      <div
+        class="ml-2 font-bold bg-gradient-to-r text-lg from-sky-400 via-blue-400 to-pink-300 from-25% via-50% to-100%"
+        style="background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+      >
+        March.7th
+      </div>
+    </div>
+    <div class="flex">
+      <a
+        href="/characters"
+        class="flex items-center text-sm gap-2 p-2 transition-opacity hover:opacity-100 ${$page.route.id === '/characters' ? 'opacity-100': 'opacity-70'}"
+      >
+        <div class="shrink-0">
+          <img src="/icon/game/AvatarIcon.png" alt="" class="w-6 h-6" />
+        </div>
+        <div class="text-base overflow-hidden font-medium">
+          Characters
+        </div>
+      </a>
+      <a
+        href="/characters"
+        class="flex items-center text-sm gap-2 p-2 transition-opacity hover:opacity-100 ${$page.route.id === '/characters' ? 'opacity-100': 'opacity-70'}"
+      >
+        <div class="shrink-0">
+          <img src="/icon/game/AvatarIcon.png" alt="" class="w-6 h-6" />
+        </div>
+        <div class="text-base overflow-hidden font-medium">
+          Characters
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    class="block 2lg:hidden duration-100 {navOpen ? 'h-screen' : 'h-10'}"
+    style="transition: height 1s"
+  >
+    <div class="flex justify-between items-center transition duration-300 pl-3">
+      <div class="flex space-x-3 items-center">
+        <picture class="shrink-0 w-10 h-10">
+          <source srcSet="/icon/logo.webp" type="image/webp" />
+          <source srcSet="/icon/logo.png" type="image/png" />
+          <img src="/icon/logo.png" alt="March 7th emoji" />
+        </picture>
+        <div
+          class="font-bold ml-5 bg-gradient-to-r text-lg from-sky-400 via-blue-400 to-pink-300 from-25% via-50% to-100%"
+          style="background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+        >
+          March.7th
+        </div>
+      </div>
+      <button on:click={() => setNavOpen(!navOpen)}>
+        <Icon icon="ion:{!navOpen ? 'menu' : 'close'}" class="text-white cursor-pointer" width="35"/>
+      </button>
+    </div>
+    <div class="px-10 py-9 flex-col justify-center relative opacity-100">
+      <div class="space-y-6 text-2xl font-medium">
+        <div class="w-fit">
+          <a
+            href="/characters"
+            style="transition-delay: 100ms"
+            class="flex items-center whitespace-pre duration-300 text-lg w-48 p-3 backdrop-blur-md rounded-lg { navOpen && $page.route.id === '/characters' ? 'bg-[#25247449] opacity-100 shadow-md shadow-[#0000006f]' : navOpen && "opacity-70" } {!navOpen && 'opacity-0 translate-x-40 overflow-hidden'}"
+          >
+            <img src="/icon/game/AvatarIcon.png" alt="" class="h-6 w-6 mr-3" />
+            <div
+              style="transition-delay: 100ms"
+              class="text-sm {$page.route.id === '/characters' ? 'font-bold': ''}"
+            >
+              Characters
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
