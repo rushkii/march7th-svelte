@@ -1,5 +1,6 @@
 <script>
   import Icon from '@iconify/svelte';
+  import { t } from '$lib/translations';
 </script>
 
 
@@ -10,16 +11,16 @@
       class="text-4xl 2lg:text-5xl font-extrabold uppercase bg-gradient-to-r from-blue-500 to-[#f0a7da] from-25% to-75%"
       style="background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
     >
-      March.7th
+      {$t("common.title")}
     </div>
     <div class="lg:text-lg xl:text-xl 2xl:px-18 md:w-[24em]">
-      A community website database for the game <span class="font-semibold">Honkai: Star Rail</span> that will make your gaming experience much easier!
+      {@html $t("common.description")}
     </div>
     <a
       href="/characters"
       class="backdrop-blur-2xl tracking-widest flex justify-center items-center py-2 px-3 rounded-md border uppercase text-sm font-medium"
     >
-      Get Started! <Icon icon="material-symbols:arrow-forward-ios-rounded" width="25" class="ml-2"/>
+      {$t("common.get_started")} <Icon icon="material-symbols:arrow-forward-ios-rounded" width="25" class="ml-2"/>
     </a>
   </div>
 </div>
