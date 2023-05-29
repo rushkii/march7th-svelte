@@ -4,17 +4,17 @@ import type { Config } from 'sveltekit-i18n';
 export const langs = {
   cht: "中文(繁體)",
   cn: "中文(简体)",
-  en: "English",
-  fr: "Français",
   de: "Deutsch",
-  ja: "日本語",
-  ko: "한국어",
+  en: "English",
+  es: "Español",
+  fr: "Français",
+  id: "Indonesia",
+  jp: "日本語",
+  kr: "한국어",
+  pt: "Português",
+  ru: "Русский",
   th: "ภาษาไทย",
   vi: "Tiếng Việt",
-  id: "Indonesia",
-  es: "Español",
-  pt: "Português",
-  ru: "Русский"
 }
 
 
