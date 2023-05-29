@@ -1,7 +1,7 @@
 import i18n from 'sveltekit-i18n';
 import type { Config } from 'sveltekit-i18n';
 
-const langs = {
+export const langs = {
   cht: "中文(繁體)",
   cn: "中文(简体)",
   en: "English",
