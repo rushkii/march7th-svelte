@@ -1,0 +1,8 @@
+{
+    "navigations": [
+        {
+            "name": "인물",
+            "link": "/characters"
+        }
+    ]
+}
