@@ -9,12 +9,14 @@ declare global {
 	}
 }
 
-type MenuNav = {
-  navigations: {
-    name: string
-    link: string
-    icon: string
-  }[]
+type Menu = {
+  navigations: Nav[]
+}
+
+type Nav = {
+  name: string
+  link: string
+  icon: string
 }
 
 

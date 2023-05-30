@@ -1,12 +1,12 @@
 import { locale } from '$lib/translations';
-import type { MenuNav } from '$types';
+import type { Menu } from '$types';
 import { writable } from 'svelte/store';
 
 
-const menuStore = writable<MenuNav>();
+const menuStore = writable<Menu>();
 
 locale.subscribe(async (lang) => {
-  const menuData: MenuNav = (await import(`./menu/${lang}.json`)).default;
+  const menuData: Menu = (await import(`./menu/${lang}.json`)).default;
   menuStore.set(menuData);
 })
 
