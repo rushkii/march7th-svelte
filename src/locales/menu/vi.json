@@ -2,7 +2,8 @@
     "navigations": [
         {
             "name": "tính cách",
-            "link": "/characters"
+            "link": "/characters",
+            "icon": "/icon/game/AvatarIcon.png"
         }
     ]
 }

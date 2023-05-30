@@ -2,7 +2,8 @@
     "navigations": [
         {
             "name": "인물",
-            "link": "/characters"
+            "link": "/characters",
+            "icon": "/icon/game/AvatarIcon.png"
         }
     ]
 }
