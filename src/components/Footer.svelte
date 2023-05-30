@@ -1,5 +1,10 @@
 <script lang="ts">
 	import Icon from "@iconify/svelte";
+  import tailwindIcon from "@iconify-icons/mdi/tailwind";
+  import twitterIcon from "@iconify-icons/mdi/twitter";
+  import telegramIcon from "@iconify-icons/ic/baseline-telegram";
+  import discordIcon from "@iconify-icons/ic/baseline-discord";
+  import svelteIcon from "@iconify-icons/devicon-plain/svelte";
 
   export let show: boolean;
 </script>
@@ -16,16 +21,16 @@
       <div class="flex px-3 flex-col items-center border-r-2 border-r-gray-500">
         <div class="font-semibold text-lg text-gray-300">Developer</div>
         <div class="flex gap-2 py-1">
-          <a href="https://twitter.com/kiizuha_"><Icon icon="mdi:twitter" width="35"/></a>
-          <a href="https://discordapp.com/users/333017995368464385"><Icon icon="mdi:discord" width="35"/></a>
-          <a href="https://kiizuha1.t.me"><Icon icon="mdi:telegram" width="35"/></a>
+          <a href="https://twitter.com/kiizuha_"><Icon icon={twitterIcon} width="35"/></a>
+          <a href="https://discordapp.com/users/333017995368464385"><Icon icon={discordIcon} width="35"/></a>
+          <a href="https://kiizuha1.t.me"><Icon icon={telegramIcon} width="35"/></a>
         </div>
       </div>
       <div class="flex px-3 flex-col items-center border-r-2 border-r-gray-500">
         <div class="font-semibold text-lg text-gray-300">Toolkit</div>
         <div class="flex gap-2 py-1">
-          <a href="https://kit.svelte.dev"><Icon icon="devicon-plain:svelte" width="35"/></a>
-          <a href="https://tailwindcss.com"><Icon icon="mdi:tailwind" width="40"/></a>
+          <a href="https://kit.svelte.dev"><Icon icon={svelteIcon} width="35"/></a>
+          <a href="https://tailwindcss.com"><Icon icon={tailwindIcon} width="40"/></a>
         </div>
       </div>
       <div class="flex px-3 flex-col items-center">
