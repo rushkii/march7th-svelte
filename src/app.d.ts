@@ -9,4 +9,13 @@ declare global {
 	}
 }
 
-export {};
+type MenuNav = {
+  navigations: {
+    name: string
+    link: string
+    icon: string
+  }[]
+}
+
+
+export const {MenuNav};
