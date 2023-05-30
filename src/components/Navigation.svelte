@@ -1,8 +1,12 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import Icon from '@iconify/svelte';
+  import menuStore from "../locales/menu";
+	import NavLink from "./NavLink.svelte";
 
   let navOpen: boolean = false;
+  let menuData = $menuStore.navigations;
+
   const setNavOpen = (state: boolean) => {
     navOpen = state
   }
@@ -12,7 +16,7 @@
 
 <div class="{show ? 'fixed' : 'hidden'} z-50 py-2 px-3 w-screen border-b border-gray-800 backdrop-blur-lg overflow-hidden text-white">
   <div class="justify-between hidden 2lg:flex">
-    <div class="flex px-2 items-center w-fit cursor-pointer">
+    <div class="flex px-2 items-center w-fit cursor-pointer select-none">
       <picture class="shrink-0 w-10 h-10">
         <source srcSet="/icon/logo.webp" type="image/webp" />
         <source srcSet="/icon/logo.png" type="image/png" />
@@ -25,29 +29,10 @@
         March.7th
       </div>
     </div>
-    <div class="flex">
-      <a
-        href="/characters"
-        class="flex items-center text-sm gap-2 p-2 transition-opacity hover:opacity-100 ${$page.route.id === '/characters' ? 'opacity-100': 'opacity-70'}"
-      >
-        <div class="shrink-0">
-          <img src="/icon/game/AvatarIcon.png" alt="" class="w-6 h-6" />
-        </div>
-        <div class="text-base overflow-hidden font-medium">
-          Characters
-        </div>
-      </a>
-      <a
-        href="/characters"
-        class="flex items-center text-sm gap-2 p-2 transition-opacity hover:opacity-100 ${$page.route.id === '/characters' ? 'opacity-100': 'opacity-70'}"
-      >
-        <div class="shrink-0">
-          <img src="/icon/game/AvatarIcon.png" alt="" class="w-6 h-6" />
-        </div>
-        <div class="text-base overflow-hidden font-medium">
-          Characters
-        </div>
-      </a>
+    <div class="flex select-none">
+      {#each menuData as menu}
+        <NavLink href={menu.link} name={menu.name} icon={menu.icon}/>
+      {/each}
     </div>
   </div>
   <div
