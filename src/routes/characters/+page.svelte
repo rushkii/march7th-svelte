@@ -60,6 +60,7 @@
               src={`/img/game/CharacterCards/${char.id}.webp`}
               alt=""
               class="relative"
+              loading="lazy"
             />
             <div
               class="flex flex-col justify-between absolute top-0 h-full w-full"
@@ -67,8 +68,8 @@
             >
               <div class="flex flex-col w-fit">
                 <div class="backdrop-blur-sm space-y-2 bg-[#0000006c] rounded-br-lg py-1 px-2">
-                  <img src={`/icon/game/IconNatureColor${char.element}.png`} alt="" class=" w-5" />
-                  <img src={`/icon/game/IconProfession${char.path}Middle.png`} alt="" class=" w-5" />
+                  <img src={`/icon/game/IconNatureColor${char.element}.png`} alt="" class=" w-5" loading="lazy" />
+                  <img src={`/icon/game/IconProfession${char.path}Middle.png`} alt="" class=" w-5" loading="lazy" />
                 </div>
               </div>
               <div class="flex flex-col items-center text-center leading-tight py-2">
