@@ -1,0 +1,265 @@
+{
+    "characters": [
+        {
+            "id": 1001,
+            "name": "Март 7",
+            "slugified": "march-7th",
+            "element": "Ice",
+            "elementTr": "Ледяной",
+            "path": "Knight",
+            "pathTr": "Сохранение"
+        },
+        {
+            "id": 1002,
+            "name": "Дань Хэн",
+            "slugified": "dan-heng",
+            "element": "Wind",
+            "elementTr": "Ветряной",
+            "path": "Rogue",
+            "pathTr": "Охота"
+        },
+        {
+            "id": 1003,
+            "name": "Химеко",
+            "slugified": "himeko",
+            "element": "Fire",
+            "elementTr": "Огненный",
+            "path": "Mage",
+            "pathTr": "Эрудиция"
+        },
+        {
+            "id": 1004,
+            "name": "Вельт",
+            "slugified": "welt",
+            "element": "Imaginary",
+            "elementTr": "Мнимый",
+            "path": "Warlock",
+            "pathTr": "Небытие"
+        },
+        {
+            "id": 1005,
+            "name": "Кафка",
+            "slugified": "kafka",
+            "element": "Thunder",
+            "elementTr": "Электрический",
+            "path": "Warlock",
+            "pathTr": "Небытие"
+        },
+        {
+            "id": 1006,
+            "name": "Серебряный Волк",
+            "slugified": "silver-wolf",
+            "element": "Quantum",
+            "elementTr": "Квантовый",
+            "path": "Warlock",
+            "pathTr": "Небытие"
+        },
+        {
+            "id": 1008,
+            "name": "Арлан",
+            "slugified": "arlan",
+            "element": "Thunder",
+            "elementTr": "Электрический",
+            "path": "Warrior",
+            "pathTr": "Разрушение"
+        },
+        {
+            "id": 1009,
+            "name": "Аста",
+            "slugified": "asta",
+            "element": "Fire",
+            "elementTr": "Огненный",
+            "path": "Shaman",
+            "pathTr": "Гармония"
+        },
+        {
+            "id": 1013,
+            "name": "Герта",
+            "slugified": "herta",
+            "element": "Ice",
+            "elementTr": "Ледяной",
+            "path": "Mage",
+            "pathTr": "Эрудиция"
+        },
+        {
+            "id": 1101,
+            "name": "Броня",
+            "slugified": "bronya",
+            "element": "Wind",
+            "elementTr": "Ветряной",
+            "path": "Shaman",
+            "pathTr": "Гармония"
+        },
+        {
+            "id": 1102,
+            "name": "Зеле",
+            "slugified": "seele",
+            "element": "Quantum",
+            "elementTr": "Квантовый",
+            "path": "Rogue",
+            "pathTr": "Охота"
+        },
+        {
+            "id": 1103,
+            "name": "Сервал",
+            "slugified": "serval",
+            "element": "Thunder",
+            "elementTr": "Электрический",
+            "path": "Mage",
+            "pathTr": "Эрудиция"
+        },
+        {
+            "id": 1104,
+            "name": "Гепард",
+            "slugified": "gepard",
+            "element": "Ice",
+            "elementTr": "Ледяной",
+            "path": "Knight",
+            "pathTr": "Сохранение"
+        },
+        {
+            "id": 1105,
+            "name": "Наташа",
+            "slugified": "natasha",
+            "element": "Physical",
+            "elementTr": "Физический",
+            "path": "Priest",
+            "pathTr": "Изобилие"
+        },
+        {
+            "id": 1106,
+            "name": "Пела",
+            "slugified": "pela",
+            "element": "Ice",
+            "elementTr": "Ледяной",
+            "path": "Warlock",
+            "pathTr": "Небытие"
+        },
+        {
+            "id": 1107,
+            "name": "Клара",
+            "slugified": "clara",
+            "element": "Physical",
+            "elementTr": "Физический",
+            "path": "Warrior",
+            "pathTr": "Разрушение"
+        },
+        {
+            "id": 1108,
+            "name": "Сампо",
+            "slugified": "sampo",
+            "element": "Wind",
+            "elementTr": "Ветряной",
+            "path": "Warlock",
+            "pathTr": "Небытие"
+        },
+        {
+            "id": 1109,
+            "name": "Хук",
+            "slugified": "hook",
+            "element": "Fire",
+            "elementTr": "Огненный",
+            "path": "Warrior",
+            "pathTr": "Разрушение"
+        },
+        {
+            "id": 1201,
+            "name": "Цинцюэ",
+            "slugified": "qingque",
+            "element": "Quantum",
+            "elementTr": "Квантовый",
+            "path": "Mage",
+            "pathTr": "Эрудиция"
+        },
+        {
+            "id": 1202,
+            "name": "Тинъюнь",
+            "slugified": "tingyun",
+            "element": "Thunder",
+            "elementTr": "Электрический",
+            "path": "Shaman",
+            "pathTr": "Гармония"
+        },
+        {
+            "id": 1203,
+            "name": "Лоча",
+            "slugified": "luocha",
+            "element": "Imaginary",
+            "elementTr": "Мнимый",
+            "path": "Priest",
+            "pathTr": "Изобилие"
+        },
+        {
+            "id": 1204,
+            "name": "Цзин Юань",
+            "slugified": "jing-yuan",
+            "element": "Thunder",
+            "elementTr": "Электрический",
+            "path": "Mage",
+            "pathTr": "Эрудиция"
+        },
+        {
+            "id": 1206,
+            "name": "Сушан",
+            "slugified": "sushang",
+            "element": "Physical",
+            "elementTr": "Физический",
+            "path": "Rogue",
+            "pathTr": "Охота"
+        },
+        {
+            "id": 1209,
+            "name": "Яньцин",
+            "slugified": "yanqing",
+            "element": "Ice",
+            "elementTr": "Ледяной",
+            "path": "Rogue",
+            "pathTr": "Охота"
+        },
+        {
+            "id": 1211,
+            "name": "Байлу",
+            "slugified": "bailu",
+            "element": "Thunder",
+            "elementTr": "Электрический",
+            "path": "Priest",
+            "pathTr": "Изобилие"
+        },
+        {
+            "id": 8001,
+            "name": "Caelus (Физический)",
+            "slugified": "trailblazer-physical",
+            "element": "Physical",
+            "elementTr": "Физический",
+            "path": "Warrior",
+            "pathTr": "Разрушение"
+        },
+        {
+            "id": 8002,
+            "name": "Stelle (Физический)",
+            "slugified": "trailblazer-physical",
+            "element": "Physical",
+            "elementTr": "Физический",
+            "path": "Warrior",
+            "pathTr": "Разрушение"
+        },
+        {
+            "id": 8003,
+            "name": "Caelus (Огненный)",
+            "slugified": "trailblazer-fire",
+            "element": "Fire",
+            "elementTr": "Огненный",
+            "path": "Knight",
+            "pathTr": "Сохранение"
+        },
+        {
+            "id": 8004,
+            "name": "Stelle (Огненный)",
+            "slugified": "trailblazer-fire",
+            "element": "Fire",
+            "elementTr": "Огненный",
+            "path": "Knight",
+            "pathTr": "Сохранение"
+        }
+    ]
+}

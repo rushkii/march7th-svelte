@@ -1,0 +1,265 @@
+{
+    "characters": [
+        {
+            "id": 1001,
+            "name": "March 7th",
+            "slugified": "march-7th",
+            "element": "Ice",
+            "elementTr": "Glace",
+            "path": "Knight",
+            "pathTr": "La Préservation"
+        },
+        {
+            "id": 1002,
+            "name": "Dan Heng",
+            "slugified": "dan-heng",
+            "element": "Wind",
+            "elementTr": "Vent",
+            "path": "Rogue",
+            "pathTr": "La Chasse"
+        },
+        {
+            "id": 1003,
+            "name": "Himeko",
+            "slugified": "himeko",
+            "element": "Fire",
+            "elementTr": "Feu",
+            "path": "Mage",
+            "pathTr": "L'Érudition"
+        },
+        {
+            "id": 1004,
+            "name": "Welt",
+            "slugified": "welt",
+            "element": "Imaginary",
+            "elementTr": "Imaginaire",
+            "path": "Warlock",
+            "pathTr": "La Nihilité"
+        },
+        {
+            "id": 1005,
+            "name": "Kafka",
+            "slugified": "kafka",
+            "element": "Thunder",
+            "elementTr": "Foudre",
+            "path": "Warlock",
+            "pathTr": "La Nihilité"
+        },
+        {
+            "id": 1006,
+            "name": "Louve d'argent",
+            "slugified": "silver-wolf",
+            "element": "Quantum",
+            "elementTr": "Quantique",
+            "path": "Warlock",
+            "pathTr": "La Nihilité"
+        },
+        {
+            "id": 1008,
+            "name": "Arlan",
+            "slugified": "arlan",
+            "element": "Thunder",
+            "elementTr": "Foudre",
+            "path": "Warrior",
+            "pathTr": "La Destruction"
+        },
+        {
+            "id": 1009,
+            "name": "Asta",
+            "slugified": "asta",
+            "element": "Fire",
+            "elementTr": "Feu",
+            "path": "Shaman",
+            "pathTr": "L'Harmonie"
+        },
+        {
+            "id": 1013,
+            "name": "Herta",
+            "slugified": "herta",
+            "element": "Ice",
+            "elementTr": "Glace",
+            "path": "Mage",
+            "pathTr": "L'Érudition"
+        },
+        {
+            "id": 1101,
+            "name": "Bronya",
+            "slugified": "bronya",
+            "element": "Wind",
+            "elementTr": "Vent",
+            "path": "Shaman",
+            "pathTr": "L'Harmonie"
+        },
+        {
+            "id": 1102,
+            "name": "Seele",
+            "slugified": "seele",
+            "element": "Quantum",
+            "elementTr": "Quantique",
+            "path": "Rogue",
+            "pathTr": "La Chasse"
+        },
+        {
+            "id": 1103,
+            "name": "Serval",
+            "slugified": "serval",
+            "element": "Thunder",
+            "elementTr": "Foudre",
+            "path": "Mage",
+            "pathTr": "L'Érudition"
+        },
+        {
+            "id": 1104,
+            "name": "Gepard",
+            "slugified": "gepard",
+            "element": "Ice",
+            "elementTr": "Glace",
+            "path": "Knight",
+            "pathTr": "La Préservation"
+        },
+        {
+            "id": 1105,
+            "name": "Natasha",
+            "slugified": "natasha",
+            "element": "Physical",
+            "elementTr": "Physique",
+            "path": "Priest",
+            "pathTr": "L'Abondance"
+        },
+        {
+            "id": 1106,
+            "name": "Pela",
+            "slugified": "pela",
+            "element": "Ice",
+            "elementTr": "Glace",
+            "path": "Warlock",
+            "pathTr": "La Nihilité"
+        },
+        {
+            "id": 1107,
+            "name": "Clara",
+            "slugified": "clara",
+            "element": "Physical",
+            "elementTr": "Physique",
+            "path": "Warrior",
+            "pathTr": "La Destruction"
+        },
+        {
+            "id": 1108,
+            "name": "Sampo",
+            "slugified": "sampo",
+            "element": "Wind",
+            "elementTr": "Vent",
+            "path": "Warlock",
+            "pathTr": "La Nihilité"
+        },
+        {
+            "id": 1109,
+            "name": "Hook",
+            "slugified": "hook",
+            "element": "Fire",
+            "elementTr": "Feu",
+            "path": "Warrior",
+            "pathTr": "La Destruction"
+        },
+        {
+            "id": 1201,
+            "name": "Qingque",
+            "slugified": "qingque",
+            "element": "Quantum",
+            "elementTr": "Quantique",
+            "path": "Mage",
+            "pathTr": "L'Érudition"
+        },
+        {
+            "id": 1202,
+            "name": "Tingyun",
+            "slugified": "tingyun",
+            "element": "Thunder",
+            "elementTr": "Foudre",
+            "path": "Shaman",
+            "pathTr": "L'Harmonie"
+        },
+        {
+            "id": 1203,
+            "name": "Luocha",
+            "slugified": "luocha",
+            "element": "Imaginary",
+            "elementTr": "Imaginaire",
+            "path": "Priest",
+            "pathTr": "L'Abondance"
+        },
+        {
+            "id": 1204,
+            "name": "Jing Yuan",
+            "slugified": "jing-yuan",
+            "element": "Thunder",
+            "elementTr": "Foudre",
+            "path": "Mage",
+            "pathTr": "L'Érudition"
+        },
+        {
+            "id": 1206,
+            "name": "Sushang",
+            "slugified": "sushang",
+            "element": "Physical",
+            "elementTr": "Physique",
+            "path": "Rogue",
+            "pathTr": "La Chasse"
+        },
+        {
+            "id": 1209,
+            "name": "Yanqing",
+            "slugified": "yanqing",
+            "element": "Ice",
+            "elementTr": "Glace",
+            "path": "Rogue",
+            "pathTr": "La Chasse"
+        },
+        {
+            "id": 1211,
+            "name": "Bailu",
+            "slugified": "bailu",
+            "element": "Thunder",
+            "elementTr": "Foudre",
+            "path": "Priest",
+            "pathTr": "L'Abondance"
+        },
+        {
+            "id": 8001,
+            "name": "Caelus (Physique)",
+            "slugified": "trailblazer-physical",
+            "element": "Physical",
+            "elementTr": "Physique",
+            "path": "Warrior",
+            "pathTr": "La Destruction"
+        },
+        {
+            "id": 8002,
+            "name": "Stelle (Physique)",
+            "slugified": "trailblazer-physical",
+            "element": "Physical",
+            "elementTr": "Physique",
+            "path": "Warrior",
+            "pathTr": "La Destruction"
+        },
+        {
+            "id": 8003,
+            "name": "Caelus (Feu)",
+            "slugified": "trailblazer-fire",
+            "element": "Fire",
+            "elementTr": "Feu",
+            "path": "Knight",
+            "pathTr": "La Préservation"
+        },
+        {
+            "id": 8004,
+            "name": "Stelle (Feu)",
+            "slugified": "trailblazer-fire",
+            "element": "Fire",
+            "elementTr": "Feu",
+            "path": "Knight",
+            "pathTr": "La Préservation"
+        }
+    ]
+}

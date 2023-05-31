@@ -1,0 +1,265 @@
+{
+    "characters": [
+        {
+            "id": 1001,
+            "name": "三月七",
+            "slugified": "march-7th",
+            "element": "Ice",
+            "elementTr": "冰",
+            "path": "Knight",
+            "pathTr": "存护"
+        },
+        {
+            "id": 1002,
+            "name": "丹恒",
+            "slugified": "dan-heng",
+            "element": "Wind",
+            "elementTr": "风",
+            "path": "Rogue",
+            "pathTr": "巡猎"
+        },
+        {
+            "id": 1003,
+            "name": "姬子",
+            "slugified": "himeko",
+            "element": "Fire",
+            "elementTr": "火",
+            "path": "Mage",
+            "pathTr": "智识"
+        },
+        {
+            "id": 1004,
+            "name": "瓦尔特",
+            "slugified": "welt",
+            "element": "Imaginary",
+            "elementTr": "虚数",
+            "path": "Warlock",
+            "pathTr": "虚无"
+        },
+        {
+            "id": 1005,
+            "name": "卡芙卡",
+            "slugified": "kafka",
+            "element": "Thunder",
+            "elementTr": "雷",
+            "path": "Warlock",
+            "pathTr": "虚无"
+        },
+        {
+            "id": 1006,
+            "name": "银狼",
+            "slugified": "silver-wolf",
+            "element": "Quantum",
+            "elementTr": "量子",
+            "path": "Warlock",
+            "pathTr": "虚无"
+        },
+        {
+            "id": 1008,
+            "name": "阿兰",
+            "slugified": "arlan",
+            "element": "Thunder",
+            "elementTr": "雷",
+            "path": "Warrior",
+            "pathTr": "毁灭"
+        },
+        {
+            "id": 1009,
+            "name": "艾丝妲",
+            "slugified": "asta",
+            "element": "Fire",
+            "elementTr": "火",
+            "path": "Shaman",
+            "pathTr": "同谐"
+        },
+        {
+            "id": 1013,
+            "name": "黑塔",
+            "slugified": "herta",
+            "element": "Ice",
+            "elementTr": "冰",
+            "path": "Mage",
+            "pathTr": "智识"
+        },
+        {
+            "id": 1101,
+            "name": "布洛妮娅",
+            "slugified": "bronya",
+            "element": "Wind",
+            "elementTr": "风",
+            "path": "Shaman",
+            "pathTr": "同谐"
+        },
+        {
+            "id": 1102,
+            "name": "希儿",
+            "slugified": "seele",
+            "element": "Quantum",
+            "elementTr": "量子",
+            "path": "Rogue",
+            "pathTr": "巡猎"
+        },
+        {
+            "id": 1103,
+            "name": "希露瓦",
+            "slugified": "serval",
+            "element": "Thunder",
+            "elementTr": "雷",
+            "path": "Mage",
+            "pathTr": "智识"
+        },
+        {
+            "id": 1104,
+            "name": "杰帕德",
+            "slugified": "gepard",
+            "element": "Ice",
+            "elementTr": "冰",
+            "path": "Knight",
+            "pathTr": "存护"
+        },
+        {
+            "id": 1105,
+            "name": "娜塔莎",
+            "slugified": "natasha",
+            "element": "Physical",
+            "elementTr": "物理",
+            "path": "Priest",
+            "pathTr": "丰饶"
+        },
+        {
+            "id": 1106,
+            "name": "佩拉",
+            "slugified": "pela",
+            "element": "Ice",
+            "elementTr": "冰",
+            "path": "Warlock",
+            "pathTr": "虚无"
+        },
+        {
+            "id": 1107,
+            "name": "克拉拉",
+            "slugified": "clara",
+            "element": "Physical",
+            "elementTr": "物理",
+            "path": "Warrior",
+            "pathTr": "毁灭"
+        },
+        {
+            "id": 1108,
+            "name": "桑博",
+            "slugified": "sampo",
+            "element": "Wind",
+            "elementTr": "风",
+            "path": "Warlock",
+            "pathTr": "虚无"
+        },
+        {
+            "id": 1109,
+            "name": "虎克",
+            "slugified": "hook",
+            "element": "Fire",
+            "elementTr": "火",
+            "path": "Warrior",
+            "pathTr": "毁灭"
+        },
+        {
+            "id": 1201,
+            "name": "青雀",
+            "slugified": "qingque",
+            "element": "Quantum",
+            "elementTr": "量子",
+            "path": "Mage",
+            "pathTr": "智识"
+        },
+        {
+            "id": 1202,
+            "name": "停云",
+            "slugified": "tingyun",
+            "element": "Thunder",
+            "elementTr": "雷",
+            "path": "Shaman",
+            "pathTr": "同谐"
+        },
+        {
+            "id": 1203,
+            "name": "罗刹",
+            "slugified": "luocha",
+            "element": "Imaginary",
+            "elementTr": "虚数",
+            "path": "Priest",
+            "pathTr": "丰饶"
+        },
+        {
+            "id": 1204,
+            "name": "景元",
+            "slugified": "jing-yuan",
+            "element": "Thunder",
+            "elementTr": "雷",
+            "path": "Mage",
+            "pathTr": "智识"
+        },
+        {
+            "id": 1206,
+            "name": "素裳",
+            "slugified": "sushang",
+            "element": "Physical",
+            "elementTr": "物理",
+            "path": "Rogue",
+            "pathTr": "巡猎"
+        },
+        {
+            "id": 1209,
+            "name": "彦卿",
+            "slugified": "yanqing",
+            "element": "Ice",
+            "elementTr": "冰",
+            "path": "Rogue",
+            "pathTr": "巡猎"
+        },
+        {
+            "id": 1211,
+            "name": "白露",
+            "slugified": "bailu",
+            "element": "Thunder",
+            "elementTr": "雷",
+            "path": "Priest",
+            "pathTr": "丰饶"
+        },
+        {
+            "id": 8001,
+            "name": "Caelus (物理)",
+            "slugified": "trailblazer-physical",
+            "element": "Physical",
+            "elementTr": "物理",
+            "path": "Warrior",
+            "pathTr": "毁灭"
+        },
+        {
+            "id": 8002,
+            "name": "Stelle (物理)",
+            "slugified": "trailblazer-physical",
+            "element": "Physical",
+            "elementTr": "物理",
+            "path": "Warrior",
+            "pathTr": "毁灭"
+        },
+        {
+            "id": 8003,
+            "name": "Caelus (火)",
+            "slugified": "trailblazer-fire",
+            "element": "Fire",
+            "elementTr": "火",
+            "path": "Knight",
+            "pathTr": "存护"
+        },
+        {
+            "id": 8004,
+            "name": "Stelle (火)",
+            "slugified": "trailblazer-fire",
+            "element": "Fire",
+            "elementTr": "火",
+            "path": "Knight",
+            "pathTr": "存护"
+        }
+    ]
+}
