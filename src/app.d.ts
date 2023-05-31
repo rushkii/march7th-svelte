@@ -34,5 +34,15 @@ type CharactersData = {
   characters: Character[]
 }
 
+type Element = {
+  id: string
+  name: string
+  originalName: string
+}
+
+type ElementsData = {
+  elements: Element[]
+}
+
 
 export const { MenuNav, CharacterData };
