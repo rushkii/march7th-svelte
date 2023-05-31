@@ -1,6 +1,7 @@
 <script lang="ts">
   import { t } from "$lib/translations";
 	import charStore from "$locales/game/characters";
+  import elmStore from "$locales/game/elements";
   import {
     getElementColor,
     getRarityBgGradient,
@@ -11,6 +12,7 @@
   let currentPath = "";
   let currentElem = "";
   let charData = $charStore.characters;
+  let elmData = $elmStore.elements;
 
   const switchPath = (path: string) => {
     currentPath = path
@@ -80,15 +82,21 @@
           {/each}
         </div>
         <div class="p-2 px-2 flex 2lg:flex-col 2lg:w-48 w-full gap-1">
-          <button
-            class="flex items-center p-[0.56rem] space-x-3 cursor-pointer rounded-md hover:bg-[#ffffff11] hover:backdrop-blur-xl ${currentElem === '' ? 'rounded-md bg-[#ffffff11] backdrop-blur-xl border border-[#ffffff25]': 'opacity-60'}"
-            on:click={() => switchElem("")}
-          >
-            <div class="w-fit">
-              <img src="/icon/game/IconNatureColorQuantum.png" alt="" class="w-[20px] 2lg:w-[25px]"/>
-            </div>
-            <div class="hidden 2lg:block">Fire</div>
-          </button>
+          {#each elmData as elm}
+            <button
+              class="flex items-center p-[0.56rem] space-x-3 cursor-pointer rounded-md hover:bg-[#ffffff11] hover:backdrop-blur-xl {currentElem === elm.id ? 'rounded-md bg-[#ffffff11] backdrop-blur-xl border border-[#ffffff25]': 'opacity-60'}"
+              on:click={() => switchElem(elm.id)}
+            >
+              <div class="w-fit">
+                <img
+                  src="/icon/game/IconNatureColor{elm.originalName}.png"
+                  alt=""
+                  class="w-[20px] 2lg:w-[25px]"
+                />
+              </div>
+              <div class="hidden 2lg:block">{elm.name}</div>
+            </button>
+          {/each}
         </div>
       </div>
     </div>
