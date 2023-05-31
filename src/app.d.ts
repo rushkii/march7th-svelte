@@ -23,6 +23,7 @@ type Character = {
   id: number
   name: string
   slugified: string
+  rarity: number
   element: string
   elementTr: string
   path: string
