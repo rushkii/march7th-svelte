@@ -1,38 +1,63 @@
-# create-svelte
+<img src=".github/assets/cover.png" />
+<h1 align="center">MARCH.7TH</h1>
+A community website database for the game <b>Honkai: Star Rail</b>
+that will make your gaming experience easier!
+<br/><br/>
+This repository is a migration and clone of my previous closed-source repository that used the <code>NextJS</code> framework. The website is incomplete and abandoned. You can view the website <a href="https://march7th.vercel.app"><b>here</b></a>.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+---
 
-## Creating a project
+## Table of Contents
+- [Installations](#installation)
+- [Feature](#feature)
+- [Need Improvements](#need-improvements)
+- [DISCLAIMER](#disclaimer)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
+```sh
+git clone https://github.com/rushkii/march7th-svelte.git
+cd march7th-svelte
+npm install
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
+# Run development mode
 npm run dev -- --open
-```
 
-## Building
-
-To create a production version of your app:
-
-```bash
+# Run build
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+<h2 id="feature">Feature</h2>
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<details open>
+    <summary>Released</summary>
+    <ul>
+        <li>characters</li>
+    </ul>
+</details>
+
+<details>
+    <summary>Coming Soon</summary>
+    <ul>
+        <li>characters:detail</li>
+        <li>
+            lightcones
+            <ul>
+                <li>ligtcones:detail</li>
+            </ul>
+        </li>
+        <li>achievements</li>
+        <li>fetch in-game profile</li>
+        <li>i18n localization translations UI</li>
+    </ul>
+</details>
+
+## Need Improvements
+1. **Peformance**<br/>
+This website needs improvement, especially for the `/characters` endpoint page. Some users are experiencing lag and stuttering when scrolling, zooming in/out, and during transitions. If you know what causes this laggy and stuttering behavior, feel free to open a PR.
+
+2. **i18n Localtion Translations**<br/>
+We need to improve the localization translations stored in `src/locale`. If you would like to contribute to your own language or fix grammar and typos, please feel free to open a pull request (PR). However, please remember that the JSON data structure must remain the same for other languages, including keys and values.
+
+## DISCLAIMER
+This repository or website is not affiliated with **HoYoverse**.<br/>
+All game assets, game contents and materials are trademarks and copyrights of **HoYoverse**.
