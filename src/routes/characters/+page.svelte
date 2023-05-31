@@ -11,8 +11,8 @@
 
   let currentPath = "";
   let currentElem = "";
-  let charData = $charStore.characters;
-  let elmData = $elmStore.elements;
+  $: charData = $charStore.characters;
+  $: elmData = $elmStore.elements;
 
   const switchPath = (path: string) => {
     currentPath = path

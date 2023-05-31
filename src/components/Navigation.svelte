@@ -7,7 +7,7 @@
 	import NavLink from "./NavLink.svelte";
 
   let navOpen: boolean = false;
-  let menuData = $menuStore.navigations;
+  $: menuData = $menuStore.navigations;
 
   const setNavOpen = () => {
     navOpen = !navOpen

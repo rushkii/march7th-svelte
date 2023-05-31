@@ -3,7 +3,7 @@ import type { Menu } from '$types';
 import { writable } from 'svelte/store';
 
 
-const menuStore = writable<Menu>();
+const menuStore = writable<Menu>({navigations: []});
 
 locale.subscribe(async (lang) => {
   if(lang === undefined) return;

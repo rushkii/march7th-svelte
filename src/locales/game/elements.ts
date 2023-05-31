@@ -3,7 +3,7 @@ import type { ElementsData } from '$types';
 import { writable } from 'svelte/store';
 
 
-const elmStore = writable<ElementsData>();
+const elmStore = writable<ElementsData>({elements: []});
 
 locale.subscribe(async (lang) => {
   if(lang === undefined) return;
