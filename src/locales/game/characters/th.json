@@ -252,7 +252,7 @@
         },
         {
             "id": 8001,
-            "name": "Caelus <br/> <span class=\"text-xs\">(กายภาพ)</span>",
+            "name": "Caelus <br/> <span style=\"font-size: 0.6rem;\">(กายภาพ)</span>",
             "slugified": "trailblazer-physical",
             "rarity": 5,
             "element": "Physical",
@@ -262,7 +262,7 @@
         },
         {
             "id": 8002,
-            "name": "Stelle <br/> <span class=\"text-xs\">(กายภาพ)</span>",
+            "name": "Stelle <br/> <span style=\"font-size: 0.6rem;\">(กายภาพ)</span>",
             "slugified": "trailblazer-physical",
             "rarity": 5,
             "element": "Physical",
@@ -272,7 +272,7 @@
         },
         {
             "id": 8003,
-            "name": "Caelus <br/> <span class=\"text-xs\">(ไฟ)</span>",
+            "name": "Caelus <br/> <span style=\"font-size: 0.6rem;\">(ไฟ)</span>",
             "slugified": "trailblazer-fire",
             "rarity": 5,
             "element": "Fire",
@@ -282,7 +282,7 @@
         },
         {
             "id": 8004,
-            "name": "Stelle <br/> <span class=\"text-xs\">(ไฟ)</span>",
+            "name": "Stelle <br/> <span style=\"font-size: 0.6rem;\">(ไฟ)</span>",
             "slugified": "trailblazer-fire",
             "rarity": 5,
             "element": "Fire",

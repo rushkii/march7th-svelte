@@ -252,7 +252,7 @@
         },
         {
             "id": 8001,
-            "name": "Caelus <br/> <span class=\"text-xs\">(Vật Lý)</span>",
+            "name": "Caelus <br/> <span style=\"font-size: 0.6rem;\">(Vật Lý)</span>",
             "slugified": "trailblazer-physical",
             "rarity": 5,
             "element": "Physical",
@@ -262,7 +262,7 @@
         },
         {
             "id": 8002,
-            "name": "Stelle <br/> <span class=\"text-xs\">(Vật Lý)</span>",
+            "name": "Stelle <br/> <span style=\"font-size: 0.6rem;\">(Vật Lý)</span>",
             "slugified": "trailblazer-physical",
             "rarity": 5,
             "element": "Physical",
@@ -272,7 +272,7 @@
         },
         {
             "id": 8003,
-            "name": "Caelus <br/> <span class=\"text-xs\">(Hỏa)</span>",
+            "name": "Caelus <br/> <span style=\"font-size: 0.6rem;\">(Hỏa)</span>",
             "slugified": "trailblazer-fire",
             "rarity": 5,
             "element": "Fire",
@@ -282,7 +282,7 @@
         },
         {
             "id": 8004,
-            "name": "Stelle <br/> <span class=\"text-xs\">(Hỏa)</span>",
+            "name": "Stelle <br/> <span style=\"font-size: 0.6rem;\">(Hỏa)</span>",
             "slugified": "trailblazer-fire",
             "rarity": 5,
             "element": "Fire",
