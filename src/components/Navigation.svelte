@@ -1,14 +1,16 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import Icon from '@iconify/svelte';
+  import menuIcon from "@iconify-icons/ion/menu";
+  import closeIcon from "@iconify-icons/ion/close";
   import menuStore from "$locales/menu";
 	import NavLink from "./NavLink.svelte";
 
   let navOpen: boolean = false;
   let menuData = $menuStore.navigations;
 
-  const setNavOpen = (state: boolean) => {
-    navOpen = state
+  const setNavOpen = () => {
+    navOpen = !navOpen
   }
 
   export let show: boolean;
@@ -53,8 +55,8 @@
           March.7th
         </div>
       </div>
-      <button on:click={() => setNavOpen(!navOpen)}>
-        <Icon icon="ion:{!navOpen ? 'menu' : 'close'}" class="text-white cursor-pointer" width="35"/>
+      <button on:click={setNavOpen}>
+        <Icon icon={!navOpen ? menuIcon : closeIcon} class="text-white cursor-pointer" width="35"/>
       </button>
     </div>
     <div class="px-10 py-9 flex-col justify-center relative opacity-100">
