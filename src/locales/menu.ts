@@ -6,6 +6,7 @@ import { writable } from 'svelte/store';
 const menuStore = writable<Menu>();
 
 locale.subscribe(async (lang) => {
+  if(lang === undefined) return;
   const menuData: Menu = (await import(`./menu/${lang}.json`)).default;
   menuStore.set(menuData);
 })
