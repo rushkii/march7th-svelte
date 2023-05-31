@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { page } from "$app/stores";
   import Icon from '@iconify/svelte';
   import menuIcon from "@iconify-icons/ion/menu";
   import closeIcon from "@iconify-icons/ion/close";
@@ -16,7 +15,7 @@
   export let show: boolean;
 </script>
 
-<div class="{show ? 'fixed' : 'hidden'} z-50 py-2 px-3 w-screen border-b border-gray-800 backdrop-blur-lg overflow-hidden text-white">
+<div class="{show ? 'fixed' : 'hidden'} z-50 py-2 px-3 w-screen border-b border-gray-800 backdrop-blur-xl overflow-hidden text-white">
   <div class="justify-between hidden 2lg:flex">
     <div class="flex px-2 items-center w-fit cursor-pointer select-none">
       <picture class="shrink-0 w-10 h-10">
@@ -32,9 +31,7 @@
       </div>
     </div>
     <div class="flex select-none">
-      {#each menuData as menu}
-        <NavLink href={menu.link} name={menu.name} icon={menu.icon}/>
-      {/each}
+      <NavLink navigations={menuData} />
     </div>
   </div>
   <div
@@ -61,20 +58,8 @@
     </div>
     <div class="px-10 py-9 flex-col justify-center relative opacity-100">
       <div class="space-y-6 text-2xl font-medium">
-        <div class="w-fit">
-          <a
-            href="/characters"
-            style="transition-delay: 100ms"
-            class="flex items-center whitespace-pre duration-300 text-lg w-48 p-3 backdrop-blur-md rounded-lg { navOpen && $page.route.id === '/characters' ? 'bg-[#25247449] opacity-100 shadow-md shadow-[#0000006f]' : navOpen && "opacity-70" } {!navOpen && 'opacity-0 translate-x-40 overflow-hidden'}"
-          >
-            <img src="/icon/game/AvatarIcon.png" alt="" class="h-6 w-6 mr-3" />
-            <div
-              style="transition-delay: 100ms"
-              class="text-sm {$page.route.id === '/characters' ? 'font-bold': ''}"
-            >
-              Characters
-            </div>
-          </a>
+        <div class="w-fit space-y-2">
+          <NavLink navigations={menuData} navOpen={navOpen}/>
         </div>
       </div>
     </div>

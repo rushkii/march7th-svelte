@@ -1,33 +1,36 @@
 <script lang="ts">
   import { page } from "$app/stores";
+	import type { Nav } from "$types";
 
-  export let href = "";
-  export let name = "";
-  export let icon = "";
+  export let navigations: Nav[];
+  export let navOpen: boolean = false;
 </script>
 
-
-{#if !($page.url.pathname === href)}
+{#each navigations as nav, i}
   <a
-    href={href}
-    class="flex items-center text-sm gap-2 p-2 transition-opacity hover:opacity-100 {$page.url.pathname === href ? 'opacity-100': 'opacity-70'}"
+    on:click={() => {}}
+    href={nav.link}
+    class="hidden 2lg:flex items-center text-sm gap-2 p-2 transition-opacity hover:opacity-100 {$page.url.pathname === nav.link ? 'opacity-100': 'opacity-70'}"
   >
     <div class="shrink-0">
-      <img src={icon} alt="" class="w-6 h-6" />
+      <img src={nav.icon} alt="" class="w-6 h-6" />
     </div>
     <div class="text-base overflow-hidden font-medium">
-      {name}
+      {nav.name}
     </div>
   </a>
-{:else}
-  <div
-    class="flex items-center text-sm gap-2 p-2 cursor-pointer transition-opacity hover:opacity-100 {$page.url.pathname === href ? 'opacity-100': 'opacity-70'}"
+  <a
+    on:click={() => {}}
+    href={nav.link}
+    style="transition-delay: {i + 1}00ms"
+    class="flex 2lg:hidden items-center border border-gray-800 duration-300 text-lg w-48 p-3 backdrop-blur-md rounded-lg { navOpen && $page.url.pathname === nav.link ? 'bg-[#25247449] border-gray-700 opacity-100 shadow-md shadow-[#0000006f]' : navOpen && "opacity-70" } {!navOpen && 'opacity-0 translate-x-40 overflow-hidden'}"
   >
-    <div class="shrink-0">
-      <img src={icon} alt="" class="w-6 h-6" />
+    <img src={nav.icon} alt="" class="h-6 w-6 mr-3" />
+    <div
+      style="transition-delay: {i + 1}00ms"
+      class="text-sm {$page.url.pathname === nav.link ? 'font-bold': ''}"
+    >
+      {nav.name}
     </div>
-    <div class="text-base overflow-hidden font-medium">
-      {name}
-    </div>
-  </div>
-{/if}
+  </a>
+{/each}
