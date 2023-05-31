@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from "$lib/translations";
-	import charStore from "../../locales/game/characters";
+	import charStore from "$locales/game/characters";
 
 
   let currentPath = "";
@@ -88,3 +88,16 @@
     </div>
   </div>
 </div>
+
+
+<style>
+  .webkit-scroll-card-y::-webkit-scrollbar {
+    width: 0.2em;
+  }
+
+  .webkit-scroll-card-y::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+</style>

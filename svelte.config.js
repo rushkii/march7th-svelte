@@ -16,7 +16,8 @@ const config = {
       $components: 'src/components',
 			$types: 'src/app.d.ts',
 			$data: 'src/data',
-      $lib: 'src/lib'
+      $lib: 'src/lib',
+      $locales: 'src/locales'
     }
 	}
 };

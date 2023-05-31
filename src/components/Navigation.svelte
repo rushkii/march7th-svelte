@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import Icon from '@iconify/svelte';
-  import menuStore from "../locales/menu";
+  import menuStore from "$locales/menu";
 	import NavLink from "./NavLink.svelte";
 
   let navOpen: boolean = false;
