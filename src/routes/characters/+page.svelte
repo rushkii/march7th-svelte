@@ -1,6 +1,11 @@
 <script lang="ts">
   import { t } from "$lib/translations";
 	import charStore from "$locales/game/characters";
+  import {
+    getElementColor,
+    getRarityBgGradient,
+    getRarityBorderColor
+  } from "$lib/game/characters";
 
 
   let currentPath = "";
@@ -48,8 +53,8 @@
           {#each charData as char}
           <div
             class={`relative rounded-tr-2xl overflow-hidden border-b-4 border-l w-28 sm:w-32 h-36 sm:h-44 backdrop-blur-lg transition duration-200 hover:scale-105`}
-            style="background-image: linear-gradient(to bottom, #ffffff1a 0%, transparent 30%);
-                    border-bottom-color: white; border-left-color: #ffffff6a;"
+            style="background-image: linear-gradient(to bottom, {getElementColor(char.element)}1a 0%, transparent 30%);
+                    border-bottom-color: {getRarityBorderColor(char.rarity)}; border-left-color: {getElementColor(char.element)}6a;"
           >
             <img
               src={`/img/game/CharacterCards/${char.id}.webp`}
@@ -58,7 +63,7 @@
             />
             <div
               class="flex flex-col justify-between absolute top-0 h-full w-full"
-              style="ackground-image: linear-gradient(to top, #ffffff1a 0%, #d0b73b00 40%)"
+              style="background-image: linear-gradient(to top, {getRarityBgGradient(char.rarity)} 0%, #d0b73b00 40%)"
             >
               <div class="flex flex-col w-fit">
                 <div class="backdrop-blur-sm space-y-2 bg-[#0000006c] rounded-br-lg py-1 px-2">
