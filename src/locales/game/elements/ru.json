@@ -1,0 +1,39 @@
+{
+    "elements": [
+        {
+            "id": "fire",
+            "name": "Огненный",
+            "originalName": "Fire"
+        },
+        {
+            "id": "ice",
+            "name": "Ледяной",
+            "originalName": "Ice"
+        },
+        {
+            "id": "imaginary",
+            "name": "Мнимый",
+            "originalName": "Imaginary"
+        },
+        {
+            "id": "physical",
+            "name": "Физический",
+            "originalName": "Physical"
+        },
+        {
+            "id": "thunder",
+            "name": "Электрический",
+            "originalName": "Thunder"
+        },
+        {
+            "id": "quantum",
+            "name": "Квантовый",
+            "originalName": "Quantum"
+        },
+        {
+            "id": "wind",
+            "name": "Ветряной",
+            "originalName": "Wind"
+        }
+    ]
+}

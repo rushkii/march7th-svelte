@@ -1,0 +1,39 @@
+{
+    "elements": [
+        {
+            "id": "fire",
+            "name": "Fogo",
+            "originalName": "Fire"
+        },
+        {
+            "id": "ice",
+            "name": "Gelo",
+            "originalName": "Ice"
+        },
+        {
+            "id": "imaginary",
+            "name": "Imaginário",
+            "originalName": "Imaginary"
+        },
+        {
+            "id": "physical",
+            "name": "Físico",
+            "originalName": "Physical"
+        },
+        {
+            "id": "thunder",
+            "name": "Raio",
+            "originalName": "Thunder"
+        },
+        {
+            "id": "quantum",
+            "name": "Quântico",
+            "originalName": "Quantum"
+        },
+        {
+            "id": "wind",
+            "name": "Vento",
+            "originalName": "Wind"
+        }
+    ]
+}

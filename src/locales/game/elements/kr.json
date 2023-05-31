@@ -1,0 +1,39 @@
+{
+    "elements": [
+        {
+            "id": "fire",
+            "name": "화염",
+            "originalName": "Fire"
+        },
+        {
+            "id": "ice",
+            "name": "얼음",
+            "originalName": "Ice"
+        },
+        {
+            "id": "imaginary",
+            "name": "허수",
+            "originalName": "Imaginary"
+        },
+        {
+            "id": "physical",
+            "name": "물리",
+            "originalName": "Physical"
+        },
+        {
+            "id": "thunder",
+            "name": "번개",
+            "originalName": "Thunder"
+        },
+        {
+            "id": "quantum",
+            "name": "양자",
+            "originalName": "Quantum"
+        },
+        {
+            "id": "wind",
+            "name": "바람",
+            "originalName": "Wind"
+        }
+    ]
+}

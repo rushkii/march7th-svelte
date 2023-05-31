@@ -1,0 +1,39 @@
+{
+    "elements": [
+        {
+            "id": "fire",
+            "name": "Hỏa",
+            "originalName": "Fire"
+        },
+        {
+            "id": "ice",
+            "name": "Băng",
+            "originalName": "Ice"
+        },
+        {
+            "id": "imaginary",
+            "name": "Số Ảo",
+            "originalName": "Imaginary"
+        },
+        {
+            "id": "physical",
+            "name": "Vật Lý",
+            "originalName": "Physical"
+        },
+        {
+            "id": "thunder",
+            "name": "Lôi",
+            "originalName": "Thunder"
+        },
+        {
+            "id": "quantum",
+            "name": "Lượng Tử",
+            "originalName": "Quantum"
+        },
+        {
+            "id": "wind",
+            "name": "Phong",
+            "originalName": "Wind"
+        }
+    ]
+}

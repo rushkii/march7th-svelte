@@ -1,0 +1,39 @@
+{
+    "elements": [
+        {
+            "id": "fire",
+            "name": "火",
+            "originalName": "Fire"
+        },
+        {
+            "id": "ice",
+            "name": "冰",
+            "originalName": "Ice"
+        },
+        {
+            "id": "imaginary",
+            "name": "虛數",
+            "originalName": "Imaginary"
+        },
+        {
+            "id": "physical",
+            "name": "物理",
+            "originalName": "Physical"
+        },
+        {
+            "id": "thunder",
+            "name": "雷",
+            "originalName": "Thunder"
+        },
+        {
+            "id": "quantum",
+            "name": "量子",
+            "originalName": "Quantum"
+        },
+        {
+            "id": "wind",
+            "name": "風",
+            "originalName": "Wind"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "elements": [
+        {
+            "id": "fire",
+            "name": "ไฟ",
+            "originalName": "Fire"
+        },
+        {
+            "id": "ice",
+            "name": "น้ำแข็ง",
+            "originalName": "Ice"
+        },
+        {
+            "id": "imaginary",
+            "name": "จินตภาพ",
+            "originalName": "Imaginary"
+        },
+        {
+            "id": "physical",
+            "name": "กายภาพ",
+            "originalName": "Physical"
+        },
+        {
+            "id": "thunder",
+            "name": "สายฟ้า",
+            "originalName": "Thunder"
+        },
+        {
+            "id": "quantum",
+            "name": "ควอนตัม",
+            "originalName": "Quantum"
+        },
+        {
+            "id": "wind",
+            "name": "ลม",
+            "originalName": "Wind"
+        }
+    ]
+}
