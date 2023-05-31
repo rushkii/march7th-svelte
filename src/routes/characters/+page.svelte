@@ -1,9 +1,11 @@
 <script lang="ts">
   import { t } from "$lib/translations";
+	import charStore from "../../locales/game/characters";
 
 
   let currentPath = "";
   let currentElem = "";
+  let charData = $charStore.characters;
 
   const switchPath = (path: string) => {
     currentPath = path
@@ -43,16 +45,16 @@
           </button>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 gap-3 mx-10 pr-5 xl:px-5 xl:mx-0 webkit-scroll-card-y overflow-y-scroll h-[35rem]">
-          {#each Array(29) as _}
+          {#each charData as char}
           <div
             class={`relative rounded-tr-2xl overflow-hidden border-b-4 border-l w-28 sm:w-32 h-36 sm:h-44 backdrop-blur-lg transition duration-200 hover:scale-105`}
             style="background-image: linear-gradient(to bottom, #ffffff1a 0%, transparent 30%);
                     border-bottom-color: white; border-left-color: #ffffff6a;"
           >
             <img
-              src=""
+              src={`/img/game/CharacterCards/${char.id}.webp`}
               alt=""
-              class="relative scale-110 top-3"
+              class="relative"
             />
             <div
               class="flex flex-col justify-between absolute top-0 h-full w-full"
@@ -60,15 +62,12 @@
             >
               <div class="flex flex-col w-fit">
                 <div class="backdrop-blur-sm space-y-2 bg-[#0000006c] rounded-br-lg py-1 px-2">
-                  <img src="" alt="" class=" w-5" />
-                  <img src="" alt="" class=" w-5" />
+                  <img src={`/icon/game/IconNatureColor${char.element}.png`} alt="" class=" w-5" />
+                  <img src={`/icon/game/IconProfession${char.path}Middle.png`} alt="" class=" w-5" />
                 </div>
               </div>
-              <div class="flex flex-col items-center leading-tight py-1">
-                <div class="font-medium">Sumanto</div>
-                <div class="flex w-20 items-center justify-center">
-                  *****
-                </div>
+              <div class="flex flex-col items-center text-center leading-tight py-2">
+                <div class="font-medium">{@html char.name}</div>
               </div>
             </div>
           </div>
