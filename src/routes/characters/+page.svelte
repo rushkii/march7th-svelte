@@ -54,12 +54,12 @@
         <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 gap-3 mx-10 pr-5 xl:px-5 xl:mx-0 webkit-scroll-card-y overflow-y-scroll h-[35rem]">
           {#each charData as char}
           <div
-            class={`relative rounded-tr-2xl overflow-hidden border-b-4 border-l w-28 sm:w-32 h-36 sm:h-44 backdrop-blur-lg transition duration-200 hover:scale-105`}
+            class="relative rounded-tr-2xl overflow-hidden border-b-4 border-l w-28 sm:w-32 h-36 sm:h-44 backdrop-blur-lg transition duration-200 hover:scale-105"
             style="background-image: linear-gradient(to bottom, {getElementColor(char.element)}1a 0%, transparent 30%);
                     border-bottom-color: {getRarityBorderColor(char.rarity)}; border-left-color: {getElementColor(char.element)}6a;"
           >
             <img
-              src={`/img/game/CharacterCards/${char.id}.webp`}
+              src="/img/game/CharacterCards/{char.id}.webp"
               alt=""
               class="relative"
               loading="lazy"
@@ -70,8 +70,8 @@
             >
               <div class="flex flex-col w-fit">
                 <div class="backdrop-blur-sm space-y-2 bg-[#0000006c] rounded-br-lg py-1 px-2">
-                  <img src={`/icon/game/IconNatureColor${char.element}.png`} alt="" class=" w-5" loading="lazy" />
-                  <img src={`/icon/game/IconProfession${char.path}Middle.png`} alt="" class=" w-5" loading="lazy" />
+                  <img src="/icon/game/IconNatureColor{char.element}.png" alt="" class=" w-5" loading="lazy" />
+                  <img src="/icon/game/IconProfession{char.path}Middle.png" alt="" class=" w-5" loading="lazy" />
                 </div>
               </div>
               <div class="flex flex-col items-center text-center leading-tight py-2">
