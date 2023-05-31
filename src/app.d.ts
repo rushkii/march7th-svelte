@@ -19,5 +19,19 @@ type Nav = {
   icon: string
 }
 
+type Character = {
+  id: number
+  name: string
+  slugified: string
+  element: string
+  elementTr: string
+  path: string
+  pathTr: string
+}
 
-export const {MenuNav};
+type CharactersData = {
+  characters: Character[]
+}
+
+
+export const { MenuNav, CharacterData };
