@@ -11,3 +11,21 @@
   <slot />
 </main>
 <Footer show={!($page.route.id === "/")} />
+
+
+<style>
+  :global(body::-webkit-scrollbar) {
+    width: 0.2em;
+  }
+
+  :global(body::-webkit-scrollbar-thumb) {
+    border-radius: 20px;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+  :global(body) {
+    @apply overflow-x-hidden;
+  }
+
+</style>
