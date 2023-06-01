@@ -5,6 +5,7 @@
     getRarityBorderColor
   } from "$lib/game/characters";
 	import type { Character } from "$types";
+	import Star from "./Star.svelte";
 
   export let char: Character;
 </script>
@@ -30,8 +31,11 @@
         <img src="/icon/game/IconProfession{char.path}Middle.png" alt="" class=" w-5" loading="lazy" />
       </div>
     </div>
-    <div class="flex flex-col items-center text-center leading-tight py-2">
+    <div class="flex flex-col items-center text-center leading-tight py-1">
       <div class="font-medium">{@html char.name}</div>
+      <div class="flex w-20 items-center justify-center">
+        <Star starCount={char.rarity}/>
+      </div>
     </div>
   </div>
 </div>
