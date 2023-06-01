@@ -44,5 +44,15 @@ type ElementsData = {
   elements: Element[]
 }
 
+type Path = {
+  id: string
+  name: string
+  originalName: string
+}
+
+type PathsData = {
+  paths: Path[]
+}
+
 
 export const { MenuNav, CharacterData };
