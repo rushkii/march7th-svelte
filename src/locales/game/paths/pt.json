@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "Todos",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "A Preservação",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "A Erudição",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "A Abundância",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "A Caça",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "A Harmonia",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "A Inexistência",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "A Destruição",
+            "originalName": "Warrior"
+        }
+    ]
+}

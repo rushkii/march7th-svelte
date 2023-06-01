@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "Semua",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "Preservation",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "Erudition",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "Abundance",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "Hunt",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "Harmony",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "Nihility",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "Destruction",
+            "originalName": "Warrior"
+        }
+    ]
+}

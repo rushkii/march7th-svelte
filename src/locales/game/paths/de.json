@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "Alle",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "Die Bewahrung",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "Die Gelehrsamkeit",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "Der Überfluss",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "Die Jagd",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "Die Harmonie",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "Die Nichtigkeit",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "Die Zerstörung",
+            "originalName": "Warrior"
+        }
+    ]
+}

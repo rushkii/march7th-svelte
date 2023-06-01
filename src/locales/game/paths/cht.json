@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "全部",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "存護",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "智識",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "豐饒",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "巡獵",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "同諧",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "虛無",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "毀滅",
+            "originalName": "Warrior"
+        }
+    ]
+}

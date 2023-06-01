@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "Tất cả",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "Bảo Hộ",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "Tri Thức",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "Trù Phú",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "Săn Bắn",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "Hòa Hợp",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "Hư Vô",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "Hủy Diệt",
+            "originalName": "Warrior"
+        }
+    ]
+}

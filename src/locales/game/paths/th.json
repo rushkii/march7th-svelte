@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "ทั้งหมด",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "อนุรักษ์",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "ปัญญา",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "เฟื่องฟู",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "ล่าสังหาร",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "ประสาน",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "ลบล้าง",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "ทำลายล้าง",
+            "originalName": "Warrior"
+        }
+    ]
+}

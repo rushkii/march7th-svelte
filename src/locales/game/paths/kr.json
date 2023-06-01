@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "모두",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "보존",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "지식",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "풍요",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "수렵",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "화합",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "공허",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "파멸",
+            "originalName": "Warrior"
+        }
+    ]
+}

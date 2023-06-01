@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "id": "all",
+            "name": "Все",
+            "originalName": "All"
+        },
+        {
+            "id": "knight",
+            "name": "Сохранение",
+            "originalName": "Knight"
+        },
+        {
+            "id": "mage",
+            "name": "Эрудиция",
+            "originalName": "Mage"
+        },
+        {
+            "id": "priest",
+            "name": "Изобилие",
+            "originalName": "Priest"
+        },
+        {
+            "id": "rogue",
+            "name": "Охота",
+            "originalName": "Rogue"
+        },
+        {
+            "id": "shaman",
+            "name": "Гармония",
+            "originalName": "Shaman"
+        },
+        {
+            "id": "warlock",
+            "name": "Небытие",
+            "originalName": "Warlock"
+        },
+        {
+            "id": "warrior",
+            "name": "Разрушение",
+            "originalName": "Warrior"
+        }
+    ]
+}
