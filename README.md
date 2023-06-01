@@ -52,10 +52,7 @@ npm run build
 </details>
 
 ## Need Improvements
-1. **Peformance**<br/>
-This website needs improvement, especially for the `/characters` endpoint page. Some users are experiencing lag and stuttering when scrolling, zooming in/out, and during transitions. If you know what causes this laggy and stuttering behavior, feel free to open a PR.
-
-2. **i18n Localtion Translations**<br/>
+1. **i18n Localtion Translations**<br/>
 We need to improve the localization translations stored in `src/locale`. If you would like to contribute to your own language or fix grammar and typos, please feel free to open a pull request (PR). However, please remember that the JSON data structure must remain the same for other languages, including keys and values.
 
 ## DISCLAIMER
