@@ -3,6 +3,9 @@
   import { t } from '$lib/translations';
 </script>
 
+<svelte:head>
+  <title>March.7th</title>
+</svelte:head>
 
 <div class="min-h-screen w-full bg-cover bg-no-repeat low-brigthness-mobile" style="background-image: url('/img/background.webp')" />
 <div class="absolute p-5 lg:p-18 2xl:p-24 xl:w-1/2 h-full xl:right-0 flex flex-col items-center justify-center">
