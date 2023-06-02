@@ -23,7 +23,7 @@
     on:click={() => {}}
     href={nav.link}
     style="transition-delay: {i + 1}00ms"
-    class="flex 2lg:hidden items-center border border-gray-800 duration-300 text-lg w-48 p-3 backdrop-blur-md rounded-lg { navOpen && $page.url.pathname === nav.link ? 'bg-[#25247449] border-gray-700 opacity-100 shadow-md shadow-[#0000006f]' : navOpen && "opacity-70" } {!navOpen && 'opacity-0 translate-x-40 overflow-hidden'}"
+    class="flex 2lg:hidden items-center border border-gray-800 duration-300 bg-[#2524744b] text-lg w-48 p-3 rounded-lg { navOpen && $page.url.pathname === nav.link ? 'bg-[#252474ae] border-gray-700 opacity-100 shadow-md shadow-[#0000006f]' : navOpen && "opacity-70" } {!navOpen && 'opacity-0 translate-x-40 overflow-hidden'}"
   >
     <img src={nav.icon} alt="" class="h-6 w-6 mr-3" />
     <div
