@@ -23,7 +23,7 @@
 
 
 <svelte:head>
-  <title>March.7th - {$t("common.characters")}</title>
+  <title>{$t("common.characters")} - March.7th</title>
 </svelte:head>
 
 
