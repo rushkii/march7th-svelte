@@ -8,7 +8,13 @@
 
 <Navigation show={!($page.route.id === "/")}/>
 <main class="flex flex-col items-center min-h-screen text-white">
-  <slot />
+  {#if ($page.route.id === "/")}
+    <slot/>
+  {:else}
+    <div class="flex flex-col items-center pt-14">
+      <slot/>
+    </div>
+  {/if}
 </main>
 <Footer show={!($page.route.id === "/")} />
 
