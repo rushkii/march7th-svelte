@@ -6,19 +6,25 @@
 	import CharacterCard from "$components/CharacterCard.svelte";
 
 
-  let currentPath = "all";
+  let currentPath = "All";
   let currentElem = "";
-  $: charData = $charStore.characters;
+
   $: elmData = $elmStore.elements;
   $: pathData = $pathStore.paths;
 
   const switchPath = (path: string) => {
-    currentPath = path
+    console.log(path)
+    currentPath = path;
   }
 
   const switchElem = (elem: string) => {
-    currentElem = elem
+    currentElem = elem === currentElem ? "" : elem;
   }
+
+  $: filterChar = $charStore.characters.filter(row =>
+    (currentPath == 'All' || row.path == currentPath) &&
+    (currentElem == '' || row.element == currentElem)
+  );
 </script>
 
 
@@ -35,14 +41,14 @@
     {$t("common.characters")}
     <div class="w-14 2lg:w-16 mt-1 bg-gradient-to-r from-sky-400 via-blue-400 to-pink-300 from-25% via-50% to-100% h-1 rounded-sm"/>
   </div>
-  <div class="px-5 md:p-5 space-y-5 w-fit">
+  <div class="px-5 md:p-5 space-y-5 w-full">
     <div class="flex flex-col 2lg:flex-row space-y-10 2lg:space-y-0 overflow-x-hidden">
       <div class="flex flex-col 2lg:flex-row w-full items-center 2lg:items-start justify-between">
         <div class="p-2 flex 2lg:flex-col gap-1">
           {#each pathData as path}
             <button
-              class="flex items-center p-2 space-x-3 w-fit 2lg:w-full 2lg:mx-3 cursor-pointer hover:opacity-100 rounded-md hover:bg-[#ffffff11] {currentPath === path.id ? 'rounded-md bg-[#ffffff11] border border-[#ffffff25]': 'opacity-60'}"
-              on:click={() => switchPath(path.id)}
+              class="flex items-center p-2 space-x-3 w-fit 2lg:w-full pr-5 cursor-pointer rounded-md hover:bg-[#ffffff11] {currentPath === path.originalName ? 'rounded-md bg-[#ffffff11] border border-[#ffffff25]': 'opacity-60'}"
+              on:click={() => switchPath(path.originalName)}
             >
               <div class="w-fit {currentPath === path.id ? "bg-white" : "bg-transparent"} p-1 rounded-full">
                 <img
@@ -56,16 +62,23 @@
             </button>
           {/each}
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 gap-3 px-3 xl:px-5 xl:mx-0 webkit-scroll-card-y overflow-y-scroll h-[35rem]">
-          {#each charData as char}
-            <CharacterCard char={char}/>
-          {/each}
-        </div>
-        <div class="p-2 px-2 justify-center flex 2lg:flex-col 2lg:w-48 w-full gap-1">
+        {#if !filterChar.length}
+          <div class="space-y-2 px-24 flex flex-col items-center h-full">
+            <img src="/emoji/pom-cry.png" alt="" class="w-[5rem]" />
+            <div class="text-center italic">Currently no data based on<br/>the path and element you chose</div>
+          </div>
+        {:else}
+          <div class="grid self-center grid-cols-2 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 gap-3 px-3 xl:px-5 webkit-scroll-card-y overflow-y-scroll h-[35rem]">
+            {#each filterChar as char}
+              <CharacterCard char={char}/>
+            {/each}
+          </div>
+        {/if}
+        <div class="p-2 flex 2lg:flex-col gap-1">
           {#each elmData as elm}
             <button
-              class="flex items-center p-[0.56rem] space-x-3 cursor-pointer rounded-md hover:bg-[#ffffff11] {currentElem === elm.id || currentElem === '' ? 'rounded-md bg-[#ffffff11] border border-[#ffffff25]': 'opacity-60'}"
-              on:click={() => switchElem(elm.id)}
+              class="flex items-center p-2 space-x-3 w-fit 2lg:w-full pr-5 cursor-pointer rounded-md hover:bg-[#ffffff11] {currentElem === elm.originalName || currentElem === '' ? 'rounded-md bg-[#ffffff11] border border-[#ffffff25]': 'opacity-60'}"
+              on:click={() => switchElem(elm.originalName)}
             >
               <div class="w-fit">
                 <img
