@@ -37,18 +37,18 @@
   </div>
   <div class="px-5 md:p-5 space-y-5 w-fit">
     <div class="flex flex-col 2lg:flex-row space-y-10 2lg:space-y-0 overflow-x-hidden">
-      <div class="flex flex-col 2lg:flex-row w-full justify-between">
-        <div class="p-2 flex 2lg:flex-col gap-y-1">
+      <div class="flex flex-col 2lg:flex-row w-full items-center 2lg:items-start justify-between">
+        <div class="p-2 flex 2lg:flex-col gap-1">
           {#each pathData as path}
             <button
-              class="flex items-center p-2 space-x-3 w-fit 2lg:w-full 2lg:mx-3 cursor-pointer hover:opacity-100 rounded-md hover:bg-[#ffffff11] hover:backdrop-blur-xl {currentPath === path.id ? 'rounded-md bg-[#ffffff11] backdrop-blur-xl border border-[#ffffff25]': 'opacity-60'}"
+              class="flex items-center p-2 space-x-3 w-fit 2lg:w-full 2lg:mx-3 cursor-pointer hover:opacity-100 rounded-md hover:bg-[#ffffff11] {currentPath === path.id ? 'rounded-md bg-[#ffffff11] border border-[#ffffff25]': 'opacity-60'}"
               on:click={() => switchPath(path.id)}
             >
               <div class="w-fit {currentPath === path.id ? "bg-white" : "bg-transparent"} p-1 rounded-full">
                 <img
                   src="/icon/game/{path.id === "all" ? 'AllIcon' : `IconProfession${path.originalName}Middle`}.png"
                   alt=""
-                  class="w-6"
+                  class="w-5"
                   style="filter: {currentPath === path.id ?  'invert(100%)' : ''}"
                 />
               </div>
@@ -56,22 +56,22 @@
             </button>
           {/each}
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 gap-3 mx-10 pr-5 xl:px-5 xl:mx-0 webkit-scroll-card-y overflow-y-scroll h-[35rem]">
+        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 gap-3 px-3 xl:px-5 xl:mx-0 webkit-scroll-card-y overflow-y-scroll h-[35rem]">
           {#each charData as char}
             <CharacterCard char={char}/>
           {/each}
         </div>
-        <div class="p-2 px-2 flex 2lg:flex-col 2lg:w-48 w-full gap-1">
+        <div class="p-2 px-2 justify-center flex 2lg:flex-col 2lg:w-48 w-full gap-1">
           {#each elmData as elm}
             <button
-              class="flex items-center p-[0.56rem] space-x-3 cursor-pointer rounded-md hover:bg-[#ffffff11] hover:backdrop-blur-xl {currentElem === elm.id ? 'rounded-md bg-[#ffffff11] backdrop-blur-xl border border-[#ffffff25]': 'opacity-60'}"
+              class="flex items-center p-[0.56rem] space-x-3 cursor-pointer rounded-md hover:bg-[#ffffff11] {currentElem === elm.id || currentElem === '' ? 'rounded-md bg-[#ffffff11] border border-[#ffffff25]': 'opacity-60'}"
               on:click={() => switchElem(elm.id)}
             >
               <div class="w-fit">
                 <img
                   src="/icon/game/IconNatureColor{elm.originalName}.png"
                   alt=""
-                  class="w-[20px] 2lg:w-[25px]"
+                  class="w-[15px] 2lg:w-[25px]"
                 />
               </div>
               <div class="hidden 2lg:block">{elm.name}</div>
