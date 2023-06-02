@@ -15,5 +15,5 @@ export const load: PageLoad = async ({ params }) => {
 		throw error(404, {message: `Looks like the character <b>${slug}</b> you are looking for is doesn't exist.` });
 	}
 
-	return { slug };
+	return { character };
 };
